@@ -1,0 +1,20 @@
+#index-banner {
+    background-image: url("banner.jpg");
+}
+
+.parallax-container-mod {
+    position: relative;
+    overflow: hidden;
+    height: 2500px;
+}
+
+#menu {
+    position: absolute;
+    top: 10%;
+    left: 0%;
+}
+
+
+
+
+
