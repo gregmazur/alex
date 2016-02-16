@@ -2,17 +2,54 @@
     background-image: url("banner.jpg");
 }
 
-.parallax-container-mod {
-    position: relative;
-    overflow: hidden;
-    height: 2500px;
-}
-
 #menu {
     position: absolute;
     top: 10%;
     left: 0%;
 }
+
+.parallax-container {
+  line-height: 2;
+  height: auto;
+}
+
+.table-of-contents a {
+    color: #ded8d6;
+}
+
+.card-content{
+     display: none;
+}
+
+.card-image{
+       display: none;
+  }
+
+
+
+@media only screen and (max-width : 1000px) {
+  #index-banner .section {
+    top: 0;
+  }
+  #menu {
+      display: none;
+  }
+  .card-content{
+       display: inline;
+  }
+
+  .card-image{
+       display: inline;
+  }
+  .desc{
+       display: none;
+  }
+}
+
+footer.page-footer {
+  margin: 0;
+}
+
 
 
 
