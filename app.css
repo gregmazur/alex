@@ -1,5 +1,8 @@
+p {
+    line-height: 2rem;
+}
 #index-banner {
-    background-image: url("banner.jpg");
+
 }
 
 #menu {
@@ -9,49 +12,58 @@
 }
 
 .parallax-container {
-  line-height: 2;
-  height: auto;
+    min-height: 380px;
+    line-height: 0;
+    height: auto;
+    color: rgba(255,255,255,.9);
 }
 
 .table-of-contents a {
-    color: #ded8d6;
+    color: #777475;
+    font-size: 150%;
+    font-weight: 400;
+    font-family: italic;
 }
 
-.card-content{
-     display: none;
+.table-of-contents a.active {
+    font-weight: 500;
+    padding-left: 18px;
+    border-left: 10px solid #ea4a4f;
 }
 
-.card-image{
-       display: none;
-  }
+.section{
+    background: url("banner.jpg");
+}
 
+@media only screen and (max-width : 992px) {
+    .parallax-container .section {
+        position: absolute;
+        top: 40%;
+    }
+    #index-banner .section {
+        top: 10%;
+    }
+    .table-of-contents{
+        display: none;
+    }
+}
 
+@media only screen and (max-width : 600px) {
+    #index-banner .section {
+        top: 0;
+    }
+    .table-of-contents{
+        display: none;
+    }
+}
 
-@media only screen and (max-width : 1000px) {
-  #index-banner .section {
-    top: 0;
-  }
-  #menu {
-      display: none;
-  }
-  .card-content{
-       display: inline;
-  }
-
-  .card-image{
-       display: inline;
-  }
-  .desc{
-       display: none;
-  }
+.icon-block {
+    padding: 0 15px;
+}
+.icon-block .material-icons {
+    font-size: inherit;
 }
 
 footer.page-footer {
-  margin: 0;
+    margin: 0;
 }
-
-
-
-
-
-
