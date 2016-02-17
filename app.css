@@ -31,9 +31,7 @@ p {
     border-left: 10px solid #ea4a4f;
 }
 
-.section{
-    background: url("banner.jpg");
-}
+
 
 @media only screen and (max-width : 992px) {
     .parallax-container .section {
